@@ -1,6 +1,14 @@
 header {
 margin: 0;
-color: red;
+color:#000000;
 
+}
+
+main{
+
+    border-style: solid; 
+    border-color:#FF0000;   
+    padding:12px; 
+    
 }
 
