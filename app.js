@@ -1,9 +1,10 @@
 'use strict';
 var counter = 0;
-function question1() {
+var username;
+function welcome() {
 
     // initial prompt to welcome the user and get their name
-    var username = prompt('Welcome to the guessing game quiz!!! What is your name?');
+    username = prompt('Welcome to the guessing game quiz!!! What is your name?');
     // a message to the user welcoming them by name and displaying game rules
 
 
@@ -14,6 +15,11 @@ function question1() {
     else {
         alert('Please answer each question with either yes or no, or y / n');
     }
+}
+
+function question1() {
+
+
     // kids will hold the user promt while uKids will hold the user promt in uppercase
     var kids = prompt('Does Peter have 1 child?');
     var uKids = kids.toUpperCase();
@@ -165,10 +171,11 @@ function question7() {
         alert('You failed this question.');
         counter++;
     }
+}
 
+//final message thanking person by name for playing and give total missed based on counter
 
-    //final message thanking person by name for playing and give total missed based on counter
-
+function question8() {
     if (username) {
         alert(' Thanks for playing ' + username + '! Out of 7 question you missed ' + counter + '! ' + (7 - counter) + ' correct answers, not bad!');
     }
@@ -177,6 +184,8 @@ function question7() {
 
     }
 }
+
+welcome();
 question1();
 question2();
 question3();
@@ -184,3 +193,4 @@ question4();
 question5();
 question6();
 question7();
+question8();
